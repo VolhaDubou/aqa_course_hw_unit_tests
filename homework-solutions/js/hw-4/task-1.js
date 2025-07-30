@@ -1,3 +1,7 @@
+const salary = 1000;
+let grade = (salary >=1000)? 'middle': 'junior';
+console.log (grade);
+
 /*
 
  - Создайте переменную salary со значением 1000
