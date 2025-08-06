@@ -4,7 +4,16 @@
  * Ожидаемый результат для `hello`: "hello contains 2 vowels and 3 consonants".
  */
 const word = 'hello';
-
 let vowelsAndConsonantsResult = '';
-
-export { vowelsAndConsonantsResult };
+let vowels = 0;
+let consonants = 0;
+for (var i = 0; i < word.length; i++) {
+    if (word[i] == 'a' || word[i] == 'e' || word[i] == 'i' || word[i] == 'o' || word[i] == 'u' || word[i] == 'y') {
+        vowels++;
+    } else {
+        consonants++;
+    }
+}
+vowelsAndConsonantsResult = `hello contains ${vowels} vowels and ${consonants} consonants`;
+console.log (vowelsAndConsonantsResult);
+//export { vowelsAndConsonantsResult };
